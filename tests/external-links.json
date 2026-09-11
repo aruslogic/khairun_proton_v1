@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://cms-assets.proton.com/proton-cms-blob/media/egudkist/2026-proton-x70-brochure.pdf",
+    "status": "unverified",
+    "reason": "<urlopen error timed out>"
+  },
+  {
+    "url": "https://cms-assets.proton.com/proton-cms-blob/media/lzkpxp31/2026-proton-x90-leaflet.pdf",
+    "status": "unverified",
+    "reason": "<urlopen error timed out>"
+  },
+  {
+    "url": "https://www.proton.com/happenings/2025/july/the-all-new-proton-x50-is-here-malaysia-s-no1-b-segment-suv-raises-the-bar-once-more",
+    "status": 200,
+    "final": "https://www.proton.com/happenings/2025/july/the-all-new-proton-x50-is-here-malaysia-s-no1-b-segment-suv-raises-the-bar-once-more"
+  },
+  {
+    "url": "https://www.proton.com/happenings/2025/november/the-all-new-saga-is-here-malaysia-s-iconic-sedan-drives-nation-into-a-new-era",
+    "status": 200,
+    "final": "https://www.proton.com/happenings/2025/november/the-all-new-saga-is-here-malaysia-s-iconic-sedan-drives-nation-into-a-new-era"
+  },
+  {
+    "url": "https://www.proton.com/happenings/2026/february/proton-defines-malaysia-s-sporty-sedan-with-the-2026-proton-s70",
+    "status": 200,
+    "final": "https://www.proton.com/happenings/2026/february/proton-defines-malaysia-s-sporty-sedan-with-the-2026-proton-s70"
+  },
+  {
+    "url": "https://www.proton.com/models/all-new-saga",
+    "status": 200,
+    "final": "https://www.proton.com/models/all-new-saga"
+  },
+  {
+    "url": "https://www.proton.com/models/all-new-x50",
+    "status": 200,
+    "final": "https://www.proton.com/models/all-new-x50"
+  },
+  {
+    "url": "https://www.proton.com/models/s70",
+    "status": 200,
+    "final": "https://www.proton.com/models/s70"
+  },
+  {
+    "url": "https://www.proton.com/models/x70",
+    "status": 200,
+    "final": "https://www.proton.com/models/x70"
+  },
+  {
+    "url": "https://www.proton.com/models/x90",
+    "status": 200,
+    "final": "https://www.proton.com/models/x90"
+  },
+  {
+    "url": "https://www.proton.com/register-interest/s70-prime-lite",
+    "status": 200,
+    "final": "https://www.proton.com/register-interest/s70-prime-lite"
+  }
+]

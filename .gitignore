@@ -1,9 +1,5 @@
-.env
-.env.*
-!.env.example
+research/
+test-output/
 node_modules/
 _site/
-test-results/
 *.zip
-*.log
-.DS_Store

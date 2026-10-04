@@ -1,0 +1,99 @@
+{
+  "id": "x50",
+  "edition": "All-New X50",
+  "reviewed": "2026-10-04",
+  "priceSource": "https://www.proton.com/happenings/2025/july/the-all-new-proton-x50-is-here-malaysia-s-no1-b-segment-suv-raises-the-bar-once-more",
+  "brochure": "https://cms-assets.proton.com/proton-cms-blob/media/axmbrvrf/all-new-proton-x50-leaflet.pdf",
+  "dimensions": "4,380 × 1,795 × 1,609 mm",
+  "wheelbase": "2,600 mm",
+  "tank": "45 L",
+  "colours": [
+    "Armour Silver",
+    "Snow White",
+    "Jet Grey",
+    "Quartz Black",
+    "Teal Bayou Green"
+  ],
+  "highlights": [
+    "Enjin i-GT 1.5TD empat silinder",
+    "Skrin infotainment 14.6 inci",
+    "Arahan suara Bahasa Melayu dan Inggeris"
+  ],
+  "variants": [
+    {
+      "name": "1.5TD Executive",
+      "price": 89800,
+      "engine": "i-GT 1.5TD turbo",
+      "ps": 181,
+      "nm": 290,
+      "transmission": "7DCT",
+      "seats": 5,
+      "airbags": 6,
+      "aeb": false,
+      "acc": false,
+      "camera": "Undur",
+      "screen": "14.6 inci",
+      "upholstery": "Fabrik",
+      "features": [
+        "Rim aloi 17 inci",
+        "Apple CarPlay / Android Auto tanpa wayar"
+      ],
+      "safety": [
+        "ABS, EBD, BA, ESC, TCS",
+        "Hill Hold Assist, Hill Descent Control",
+        "LCA, RCTA, RCW, DOW"
+      ]
+    },
+    {
+      "name": "1.5TD Premium",
+      "price": 101800,
+      "engine": "i-GT 1.5TD turbo",
+      "ps": 181,
+      "nm": 290,
+      "transmission": "7DCT",
+      "seats": 5,
+      "airbags": 6,
+      "aeb": true,
+      "acc": true,
+      "camera": "360° HD + 180° bawah kenderaan",
+      "screen": "14.6 inci",
+      "upholstery": "Leatherette",
+      "features": [
+        "Rim aloi 18 inci",
+        "Kerusi pemandu elektrik 6 hala",
+        "Power tailgate"
+      ],
+      "safety": [
+        "AEB, FCW, ACC, ICC",
+        "LDW, LDP, LCC, TSI, FDA, IHBC",
+        "LCA, RCTA, RCW, DOW"
+      ]
+    },
+    {
+      "name": "1.5TD Flagship",
+      "price": 113300,
+      "engine": "i-GT 1.5TD turbo",
+      "ps": 181,
+      "nm": 290,
+      "transmission": "7DCT",
+      "seats": 5,
+      "airbags": 6,
+      "aeb": true,
+      "acc": true,
+      "camera": "360° HD + 180° bawah kenderaan",
+      "screen": "14.6 inci",
+      "upholstery": "Leatherette hitam / Mulberry Maroon",
+      "features": [
+        "Sunroof panoramik",
+        "Power tailgate",
+        "Auto Park Assist",
+        "Pengecas tanpa wayar"
+      ],
+      "safety": [
+        "AEB, FCW, ACC, ICC",
+        "LDW, LDP, LCC, TSI, FDA, IHBC",
+        "LCA, RCTA, RCW, DOW"
+      ]
+    }
+  ]
+}

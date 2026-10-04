@@ -1,6 +1,33 @@
 # Khairun Proton — ProtonMatch
 
-Versi terkini dengan profil Khairun, lima model Proton, padanan, perbandingan, trade-in, mesej WhatsApp dan kredit ARUSLOGIC.
+Digital Proton Sales Advisor dengan showroom dalaman untuk Saga, S70, X50, X70 dan X90. Padanan empat soalan, trade-in, profil Khairun dan kredit ARUSLOGIC dikekalkan.
+
+## Kemas kini 4 Oktober 2026
+
+- Halaman model dalaman: harga varian, spesifikasi, kelengkapan, keselamatan/ADAS, sampel warna dan galeri brosur rasmi.
+- S70: Lite, Prime, Premium, Flagship dan Flagship X. Enjin tanpa turbo dan turbo dibezakan.
+- Compare dua varian/model dengan penanda perbezaan dan anggaran beza ansuran.
+- Kalkulator menggunakan harga varian, deposit RM, kadar rata boleh ubah dan tempoh 5/7/9 tahun. Bukan tawaran bank.
+- Test drive: nama, model, varian, tarikh dan masa Malaysia disusun ke WhatsApp asal Khairun, 60172032996. Pelanggan menekan Hantar sendiri; slot belum disahkan.
+- Floating WhatsApp dengan konteks pilihan; promosi bertarikh dipisahkan daripada data model.
+- Harga katalog ialah OTR Semenanjung, individu persendirian, tanpa insurans, sebelum rebat. Rebat tidak ditolak automatik.
+- Warna ialah sampel skrin, bukan simulasi warna kereta. Galeri ilustrasi brosur; kelengkapan mengikut varian.
+
+## Kemas kini data
+
+Edit `data/saga.json`, `s70.json`, `x50.json`, `x70.json` atau `x90.json`. Sumber rasmi dan tarikh semakan direkod setiap model. Promosi hanya berada di `data/promotions.json`.
+
+```text
+node scripts/build-data.mjs
+node tests/validate.mjs
+node tests/showroom.mjs
+```
+
+`showroom-data.js` dijana daripada JSON dan mesti dihantar bersama aplikasi untuk startup serta penggunaan offline. Katalog asal mengekalkan peraturan padanan; varian dan rujukan brosur diselaraskan daripada data baharu. Naikkan `RELEASE` dalam `sw.js` selepas perubahan fail awam. Tambah aset baharu ke cache dan workflow jika perlu.
+
+## Ujian pelayar
+
+Dengan pelayan tempatan berjalan dan Playwright tersedia, jalankan `node tests/browser.cjs`. Pilihan persekitaran: `PLAYWRIGHT_MODULE`, `BROWSER_PATH` dan `TEST_URL`. Ujian merangkumi empat lebar skrin, aliran utama dan reload offline. WhatsApp dipintas semasa ujian; tiada mesej dihantar.
 
 ## Deploy melalui GitHub Actions (disyorkan)
 
@@ -21,7 +48,7 @@ Semua pautan aset menggunakan laluan relatif untuk menyokong URL repositori GitH
 - Alternatif tanpa Actions: Settings → Pages → Deploy from a branch → main → / (root).
 - Jawapan disimpan dalam sessionStorage pada tab pelanggan. Tiada database lead atau penghantaran mesej automatik.
 - Pembelian dihadkan kepada Saga, S70, X50, X70 dan X90. Trade-in boleh memasukkan jenama lain.
-- Harga, anggaran pembiayaan dan kelayakan rebat tidak dikira secara automatik.
+- Harga varian digunakan dalam anggaran pembiayaan; kelayakan rebat dan kelulusan bank tidak ditentukan aplikasi.
 - Fail JavaScript dan peraturan padanan dihantar ke pelayar. GitHub Pages tidak menyembunyikan business logic; perlindungan itu memerlukan backend.
 - Nombor SA: 017-203 2996. Pautan promosi pembangun: https://wa.me/qr/AGHHT7IHPCMFI1.
 - Untuk semakan tempatan: `python -m http.server 8000` kemudian buka http://localhost:8000.
@@ -34,7 +61,7 @@ Foto Khairun dan logo ARUSLOGIC dibekalkan oleh pemilik projek. Sumber imej mode
 
 ## Status persediaan
 
-Lihat RELEASE-CHECKLIST.md untuk semakan yang lulus dan batas yang belum disahkan. GitHub repository dan Pages belum dicipta/diaktifkan oleh eksport ini.
+Lihat RELEASE-CHECKLIST.md untuk hasil semakan. Kemas kini ini berada dalam salinan tempatan repository asal `aruslogic/khairun_proton_v1`. Belum dipush atau diterbitkan ke laman live.
 
 ## Rujukan teknikal
 

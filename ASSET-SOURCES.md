@@ -23,4 +23,16 @@ with that old selection must choose a current variant.
 
 Lite / Prime: naturally aspirated 1.5, 120 PS, 150 Nm, CVT.
 Turbo: 181 PS, 290 Nm, seven-speed DCT. Equipment varies by variant.
-The S70 review date is model-specific; other models retain their prior date.
+All five models were reviewed again on 4 October 2026 for the internal showroom.
+
+## Internal showroom galleries — 4 October 2026
+
+`assets/gallery/*-exterior.webp` and `*-interior.webp` are photographic panels extracted from page 1 of these official brochures. Copyright remains with Proton and respective owners. Images are illustrative; equipment varies by variant. Existing cutout images are retained.
+
+- Saga: https://cms-assets.proton.com/proton-cms-blob/media/40ehguyc/all-new-saga-leaflet.pdf
+- S70: https://cms-assets.proton.com/proton-cms-blob/media/ktwfqrio/2026-protons70_combine_brochure_sd.pdf
+- X50: https://cms-assets.proton.com/proton-cms-blob/media/axmbrvrf/all-new-proton-x50-leaflet.pdf
+- X70: https://cms-assets.proton.com/proton-cms-blob/media/egudkist/2026-proton-x70-brochure.pdf
+- X90: https://cms-assets.proton.com/proton-cms-blob/media/lzkpxp31/2026-proton-x90-leaflet.pdf
+
+Technical tables were inspected visually because some PDFs contain image-only tables. `data/*.json` records brochure and price sources. Research downloads and screenshots are excluded from deployment and the source package.

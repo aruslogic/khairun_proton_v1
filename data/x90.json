@@ -1,0 +1,14 @@
+{
+  "id":"x90","edition":"X90 2026","reviewed":"2026-10-04",
+  "priceSource":"https://cms-assets.proton.com/proton-cms-blob/media/lzlh4qil/pm_pricelist-2026-proton-x90-11-mar.pdf",
+  "brochure":"https://cms-assets.proton.com/proton-cms-blob/media/lzkpxp31/2026-proton-x90-leaflet.pdf",
+  "dimensions":"4,830 × 1,900 × 1,764 mm","wheelbase":"2,805 mm","tank":"60 L","boot":"257 L; 1,011 L dengan baris ketiga dilipat; 2,050 L dengan baris kedua dan ketiga dilipat",
+  "colours":["Quartz Black","Marine Blue","Armour Silver","Snow White","Jet Grey"],
+  "highlights":["SUV tiga baris","Enjin i-GT 1.5TD empat silinder","Saluran udara baris kedua dan ketiga"],
+  "note":"Brosur X90 2026 tidak menyenaraikan AEB atau ACC. Jangan samakan kelengkapan dengan X90 generasi terdahulu.",
+  "variants":[
+    {"name":"1.5TD Lite","price":106800,"engine":"i-GT 1.5TD turbo","ps":181,"nm":290,"transmission":"7DCT","seats":7,"airbags":6,"aeb":false,"acc":false,"camera":"Undur","screen":"12.3 inci","upholstery":"Leatherette","features":["Bangku baris kedua 60:40","Rim aloi 18 inci","7 port USB"],"safety":["ABS, EBD, BA, ESC, TCS","Hill Hold Assist, Hill Descent Control"]},
+    {"name":"1.5TD Prime","price":116800,"engine":"i-GT 1.5TD turbo","ps":181,"nm":290,"transmission":"7DCT","seats":7,"airbags":6,"aeb":false,"acc":false,"camera":"360° HD + 180° bawah kenderaan","screen":"12.3 inci","upholstery":"Leatherette","features":["Bangku baris kedua 60:40","Meter 10.3 inci","Kerusi pemandu elektrik 6 hala"],"safety":["ABS, EBD, BA, ESC, TCS","Hill Hold Assist, Hill Descent Control","TPMS"]},
+    {"name":"1.5TD Prime X","price":122800,"engine":"i-GT 1.5TD turbo","ps":181,"nm":290,"transmission":"7DCT","seats":6,"airbags":6,"aeb":false,"acc":false,"camera":"360° HD + 180° bawah kenderaan","screen":"12.3 inci","upholstery":"Nappa leather","features":["Captain seats baris kedua","Kerusi baris pertama dan kedua berventilasi","DVR"],"safety":["ABS, EBD, BA, ESC, TCS","Hill Hold Assist, Hill Descent Control","TPMS"]}
+  ]
+}

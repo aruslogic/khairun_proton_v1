@@ -1,0 +1,76 @@
+{
+  "id": "x70",
+  "edition": "X70 2026",
+  "reviewed": "2026-10-04",
+  "priceSource": "https://www.proton.com/happenings/2026/january/proton-focuses-on-what-matters-most-to-owners-for-2026-proton-x70",
+  "brochure": "https://cms-assets.proton.com/proton-cms-blob/media/egudkist/2026-proton-x70-brochure.pdf",
+  "dimensions": "4,532 × 1,831 × 1,694 mm",
+  "wheelbase": "2,670 mm",
+  "tank": "60 L",
+  "colours": [
+    "Snow White",
+    "Armour Silver",
+    "Jet Grey",
+    "Marine Blue"
+  ],
+  "highlights": [
+    "Enjin i-GT 1.5TD empat silinder",
+    "Suspensi belakang multi-link",
+    "Penyaman udara dua zon"
+  ],
+  "note": "Sport Edition ialah pakej edisi terhad berasaskan Premium. Stok dan harga pakej perlu disahkan dengan Khairun; tidak dimasukkan sebagai varian standard.",
+  "variants": [
+    {
+      "name": "1.5TD Executive",
+      "price": 106800,
+      "engine": "i-GT 1.5TD turbo",
+      "ps": 181,
+      "nm": 290,
+      "transmission": "7DCT",
+      "seats": 5,
+      "airbags": 6,
+      "aeb": false,
+      "acc": false,
+      "camera": "360° + 180° bawah kenderaan",
+      "screen": "12.3 inci",
+      "upholstery": "Leatherette",
+      "features": [
+        "Rim aloi 18 inci",
+        "Power tailgate",
+        "Kerusi pemandu elektrik 6 hala",
+        "Kerusi hadapan berventilasi"
+      ],
+      "safety": [
+        "ABS, EBD, BA, ESC, TCS",
+        "Hill Hold Assist, Hill Descent Control"
+      ]
+    },
+    {
+      "name": "1.5TD Premium",
+      "price": 119800,
+      "engine": "i-GT 1.5TD turbo",
+      "ps": 181,
+      "nm": 290,
+      "transmission": "7DCT",
+      "seats": 5,
+      "airbags": 6,
+      "aeb": true,
+      "acc": true,
+      "camera": "360° + 180° bawah kenderaan",
+      "screen": "12.3 inci",
+      "upholstery": "Leatherette",
+      "features": [
+        "Rim aloi 19 inci",
+        "Kerusi hadapan berventilasi",
+        "Sokongan lumbar pemandu",
+        "Kerusi penumpang elektrik / Boss switch"
+      ],
+      "safety": [
+        "AEB, FCW, ACC, ICC",
+        "LDW, LDP, LCC, TSI, IHBC",
+        "LCA, RCTA, RCW, DOW",
+        "TPMS"
+      ]
+    }
+  ]
+}

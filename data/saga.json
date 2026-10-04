@@ -1,0 +1,17 @@
+{
+  "id": "saga",
+  "edition": "All-New Saga",
+  "reviewed": "2026-10-04",
+  "priceSource": "https://cms-assets.proton.com/proton-cms-blob/media/ip4lyxes/all-new-proton-saga-pricelist_pm.pdf",
+  "brochure": "https://cms-assets.proton.com/proton-cms-blob/media/40ehguyc/all-new-saga-leaflet.pdf",
+  "dimensions": "4,390 × 1,690 × 1,525 mm",
+  "wheelbase": "2,465 mm",
+  "tank": "40 L",
+  "colours": ["Marine Blue", "Space Grey", "Ruby Red", "Armour Silver", "Snow White"],
+  "highlights": ["Enjin i-GT 1.5 empat silinder", "Stereng kuasa elektrik", "Lampu utama projektor LED"],
+  "variants": [
+    {"name":"1.5 Standard","price":38990,"engine":"i-GT 1.5 tanpa turbo","ps":120,"nm":150,"transmission":"4AT","seats":5,"airbags":2,"aeb":false,"acc":false,"camera":"Tiada","screen":"Unit 9 inci, butang kapasitif","upholstery":"Fabrik","features":["Rim aloi 14 inci","Meter TFT 7 inci"],"safety":["ABS, EBD, BA","ESC, TCS, Hill Hold Assist"]},
+    {"name":"1.5 Executive","price":44990,"engine":"i-GT 1.5 tanpa turbo","ps":120,"nm":150,"transmission":"4AT","seats":5,"airbags":2,"aeb":false,"acc":false,"camera":"Undur","screen":"Skrin sentuh 9 inci","upholstery":"Fabrik bertekstur","features":["Rim aloi 15 inci","Apple CarPlay / Android Auto tanpa wayar"],"safety":["ABS, EBD, BA","ESC, TCS, Hill Hold Assist"]},
+    {"name":"1.5 Premium","price":49990,"engine":"i-GT 1.5 tanpa turbo","ps":120,"nm":150,"transmission":"CVT","seats":5,"airbags":6,"aeb":true,"acc":false,"camera":"Undur","screen":"Skrin sentuh 9 inci","upholstery":"Leatherette dua tona","features":["Rim aloi 15 inci dua tona","Apple CarPlay / Android Auto tanpa wayar"],"safety":["AEB, FCW, FDA","LDW, IHBC","LCA, RCW, RCTA, DOW","ESC, TCS, Hill Hold Assist"]}
+  ]
+}

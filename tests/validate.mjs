@@ -9,7 +9,7 @@ const exists=p=>assert.ok(fs.existsSync(path.join(root,p)),`Missing: ${p}`);
 const manifest=JSON.parse(read('manifest.json'));
 assert.equal(manifest.scope,'./');assert.equal(manifest.start_url,'./#home');
 for(const i of manifest.icons){exists(i.src);const b=fs.readFileSync(path.join(root,i.src));assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');assert.equal(`${b.readUInt32BE(16)}x${b.readUInt32BE(20)}`,i.sizes);}
-for(const p of ['app.js','catalog.js','pwa.js','sw.js'])new vm.Script(read(p),{filename:p});
+for(const p of ['app.js','catalog.js','pwa.js','sw.js','showroom.js','showroom-data.js'])new vm.Script(read(p),{filename:p});
 for(const [,p]of read('index.html').matchAll(/(?:href|src)="([^"]+)"/g))if(!p.startsWith('#')&&!/^https?:/.test(p))exists(p);
 const cat=vm.createContext({});vm.runInContext(read('catalog.js'),cat);
 const PM=cat.PM;
@@ -22,12 +22,14 @@ function render(route,saved=null){
  const events={},nodes=new Map();
  const node=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',href:'',hidden:false,classList:{toggle(){},remove(){}},dataset:{},focus(){},insertAdjacentHTML(_pos,h){this.innerHTML+=h},querySelector(){return node('child')},addEventListener(type,fn){events[id+':'+type]=fn}});return nodes.get(id)};
  const app=node('app');
- const c=vm.createContext({console,PM,document:{getElementById:node,body:{dataset:{}}},location:{hash:'#'+route},sessionStorage:{getItem:()=>saved,setItem(){},removeItem(){}},window:{addEventListener(){},scrollTo(){}},history:{back(){}},navigator:{clipboard:{writeText:async()=>{}}},alert(){},confirm:()=>true});
+ const c=vm.createContext({console,PM,document:{getElementById:node,querySelectorAll:()=>[],body:{dataset:{}}},location:{hash:'#'+route},sessionStorage:{getItem:()=>saved,setItem(){},removeItem(){}},window:{addEventListener(){},scrollTo(){}},history:{back(){}},navigator:{clipboard:{writeText:async()=>{}}},alert(){},confirm:()=>true});
+ vm.runInContext(read('showroom-data.js'),c);
+ vm.runInContext(read('showroom.js'),c);
  vm.runInContext(read('app.js'),c);
  return {app,nodes,events};
 }
 const valid={answers:['Keluarga','7',['Ruang'],'SUV'],selected:'x90',variant:'1.5TD Prime',compare:['saga','x90'],trade:'yes',old:{brand:'Perodua',model:'Myvi',year:'2018',mileage:'90000',loan:'Ya'}};
-for(const route of ['home','catalog','question/0','question/1','question/2','question/3','results','compare','summary',...PM.allowedIds.map(x=>'model/'+x)])assert.ok(render(route,JSON.stringify(valid)).app.innerHTML.length>100,route);
+for(const route of ['home','catalog','question/0','question/1','question/2','question/3','results','compare','summary','loan','test-drive','promotions',...PM.allowedIds.map(x=>'model/'+x)])assert.ok(render(route,JSON.stringify(valid)).app.innerHTML.length>100,route);
 for(const bad of ['{',JSON.stringify({answers:[null,null,null,null],compare:[null],purpose:'<script>alert(1)</script>'}),JSON.stringify({answers:['<img>',{},['<svg>'],'SUV'],old:{brand:{bad:true}}})]){
  for(const route of ['home','question/2','summary','results'])assert.doesNotThrow(()=>render(route,bad));
 }

@@ -1,6 +1,6 @@
 'use strict';
 // Bump RELEASE after every change to a precached file.
-const RELEASE='2026-09-11.1';
+const RELEASE='2026-10-04.1';
 const PREFIX='khairun-proton:'+self.registration.scope+':';
 const CACHE=PREFIX+RELEASE;
 const ASSETS=['./','index.html','app.js','catalog.js','pwa.js','style.css','khairun.css','manifest.json','assets/khairun.jpg','assets/aruslogic.png','assets/saga.png','assets/s70.png','assets/x50.png','assets/x70.png','assets/x90.png','assets/icon-192.png','assets/icon-512.png','assets/icon-maskable-512.png','assets/apple-touch-icon.png'];

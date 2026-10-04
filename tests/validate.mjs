@@ -38,6 +38,23 @@ assert.equal(url.hostname,'wa.me');assert.equal(url.pathname,'/60172032996');
 assert.match(url.searchParams.get('text'),/Myvi/);assert.match(url.searchParams.get('text'),/1.5TD Prime/);
 const privateSummary=render('summary',JSON.stringify({...valid,share:false,tradeShare:false}));
 assert.doesNotMatch(privateSummary.nodes.get('message').textContent,/Myvi|Varian:|Penggunaan:/);
+// Current S70 range: NA and turbo must remain distinct throughout the enquiry.
+assert.deepEqual(Array.from(PM.get('s70').variants),['1.5 Lite','1.5 Prime','1.5TD Premium','1.5TD Flagship','1.5TD Flagship X']);
+for(const variant of PM.get('s70').variants){
+ const saved={...valid,answers:['Ulang-alik','5',['Keselesaan'],'Sedan'],selected:'s70',variant};
+ const page=render('model/s70',JSON.stringify(saved));
+ assert.match(page.app.innerHTML,/4 Oktober 2026/);
+ assert.ok(page.app.innerHTML.includes(PM.get('s70').variantNotes[variant]));
+ const enquiry=render('summary',JSON.stringify(saved));
+ const text=new URL(enquiry.nodes.get('whatsapp-link').href).searchParams.get('text');
+ assert.ok(text.includes('Varian: '+variant+'.'));
+ page.events['app:change']({target:{id:'variant',value:'1.5 Prime',dataset:{}}});
+ assert.match(page.nodes.get('variant-note').textContent,/120 PS.*CVT/);
+ page.events['app:change']({target:{id:'variant',value:'1.5TD Flagship',dataset:{}}});
+ assert.match(page.nodes.get('variant-note').textContent,/181 PS.*DCT/);
+}
+const retired=render('summary',JSON.stringify({...valid,selected:'s70',variant:'1.5TD Executive'}));
+assert.doesNotMatch(retired.nodes.get('message').textContent,/Executive/);
 // Exercise service-worker lifecycle and scoped cache cleanup without network access.
 const listeners={},removed=[],requests=[];
 const scope='https://aruslogic.github.io/khairun-proton/';
